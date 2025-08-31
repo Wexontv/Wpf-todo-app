@@ -1,0 +1,20 @@
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\bin\Debug\net8.0-windows\Wpf todo app.exe
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\bin\Debug\net8.0-windows\Wpf todo app.deps.json
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\bin\Debug\net8.0-windows\Wpf todo app.runtimeconfig.json
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\bin\Debug\net8.0-windows\Wpf todo app.dll
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\bin\Debug\net8.0-windows\Wpf todo app.pdb
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\obj\Debug\net8.0-windows\Wpf todo app_MarkupCompile.cache
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\obj\Debug\net8.0-windows\Wpf todo app_MarkupCompile.lref
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\obj\Debug\net8.0-windows\Wpf todo app.g.resources
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\obj\Debug\net8.0-windows\Wpf todo app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\obj\Debug\net8.0-windows\Wpf todo app.AssemblyInfoInputs.cache
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\obj\Debug\net8.0-windows\Wpf todo app.AssemblyInfo.cs
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\obj\Debug\net8.0-windows\Wpf todo app.csproj.CoreCompileInputs.cache
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\obj\Debug\net8.0-windows\Wpf todo app.dll
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\obj\Debug\net8.0-windows\refint\Wpf todo app.dll
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\obj\Debug\net8.0-windows\Wpf todo app.pdb
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\obj\Debug\net8.0-windows\Wpf todo app.genruntimeconfig.cache
+C:\Users\Wiktor\Desktop\Wpf todo app\Wpf todo app\Wpf todo app\obj\Debug\net8.0-windows\ref\Wpf todo app.dll
