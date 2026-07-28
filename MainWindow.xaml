@@ -1,0 +1,27 @@
+﻿<Window x:Class="Wpf_todo_app.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="MainWindow" Height="450" Width="800"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+
+    <StackPanel Margin="20">
+        <TextBox Name="TaskInput" Width="300" Margin="0,10,0,20" 
+                 materialDesign:HintAssist.Hint="Wpisz nowe zadanie..." />
+
+        <Button Content="Dodaj zadanie" Width="150" Click="AddTaskClick" Margin="0,0,0,20" />
+
+        <ListBox Name="TaskList" Height="200" ItemsSource="{Binding TasksList}" DisplayMemberPath="DisplayText" />
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Button Content="Usuń" Width="120" Click="RemoveTaskClick" Margin="0,0,10,0" Style="{StaticResource MaterialDesignOutlinedButton}" Foreground="Red"/>
+            <Button Content="Zrobione" Width="120" Click="DoneClick" />
+        </StackPanel>
+    </StackPanel>
+</Window>
