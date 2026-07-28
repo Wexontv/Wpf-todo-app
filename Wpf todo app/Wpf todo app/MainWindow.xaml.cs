@@ -1,31 +1,25 @@
-﻿using System.Text;
+﻿using System.Collections.ObjectModel; 
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Wpf_todo_app
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        public ObservableCollection<TodoItem> TasksList { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
+            TasksList = new ObservableCollection<TodoItem>();
+
+            this.DataContext = this;
         }
 
         private void AddTaskClick(object sender, RoutedEventArgs e)
         {
-            if(!string.IsNullOrWhiteSpace(TaskInput.Text))
+            if (!string.IsNullOrWhiteSpace(TaskInput.Text))
             {
-                TaskList.Items.Add(TaskInput.Text);
+                TasksList.Add(new TodoItem { Title = TaskInput.Text, IsDone = false });
                 TaskInput.Clear();
             }
             else
@@ -33,27 +27,30 @@ namespace Wpf_todo_app
                 MessageBox.Show("Please enter the task.");
             }
         }
+
         private void RemoveTaskClick(object sender, RoutedEventArgs e)
         {
-            if(TaskList.SelectedItem != null)
+            if (TaskList.SelectedItem is TodoItem selectedTask)
             {
-                TaskList.Items.Remove(TaskList.SelectedItem);
+                TasksList.Remove(selectedTask);
             }
             else
             {
                 MessageBox.Show("Please select the task to delete");
             }
         }
+
         private void DoneClick(object sender, RoutedEventArgs e)
         {
-            if (TaskList.SelectedItem != null)
+            if (TaskList.SelectedItem is TodoItem selectedTask)
             {
-                int index = TaskList.SelectedIndex;
-                string task = TaskList.SelectedItem.ToString();
-
-                if (!task.Contains("[DONE]"))
+                if (!selectedTask.IsDone)
                 {
-                    TaskList.Items[index] = task + " [DONE]";
+                    selectedTask.IsDone = true;
+
+                    int index = TasksList.IndexOf(selectedTask);
+                    TasksList.Remove(selectedTask);
+                    TasksList.Insert(index, selectedTask);
                 }
             }
             else
@@ -61,5 +58,12 @@ namespace Wpf_todo_app
                 MessageBox.Show("Please select the task to mark done");
             }
         }
+    }
+
+    public class TodoItem
+    {
+        public string Title { get; set; } = string.Empty;
+        public bool IsDone { get; set; }
+        public string DisplayText => IsDone ? $"{Title} [DONE]" : Title;
     }
 }
